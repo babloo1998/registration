@@ -12,7 +12,6 @@ $(window).on('load',function(){
 });
 
 const validateForm = () => {
-    console.log("yes");
     var name = document.forms["form"]["name"].value;
     var email = document.forms["form"]["email"].value;
     var checked = document.getElementById("Check1").checked;
@@ -35,7 +34,6 @@ function setCookie() {
     d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toGMTString();
     var x = "form=true";
-    console.log("######", x);
     document.cookie = x;
 }
 
@@ -57,9 +55,7 @@ function getCookie(cname) {
 
 function checkCookie(sampleName) {
     var user = getCookie(sampleName);
-    console.log("####", sampleName);
     if (user === "") {
-        console.log("nooooo");
         return false;
 
     }
