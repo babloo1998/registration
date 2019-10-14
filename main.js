@@ -60,7 +60,7 @@ function checkCookie(sampleName) {
 
     }
     else {
-        alert("Welcome again " + user);
+        alert("Welcome again ");
         return true;
     }
 }
