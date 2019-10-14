@@ -1,6 +1,6 @@
 $(window).on('load', function () {
-    $('#myModal').modal('show');
-    // checkCookie();
+    
+    checkCookie("username");
     });
 
 
@@ -28,7 +28,6 @@ function setCookie(cname,cvalue,expires) {
     var x = cname + "=" + cvalue + "," + expires + ",path=/";
     console.log("######",x);
     document.cookie = x;
-    console.log("@@@@",document.cookie)
   }
   
   function getCookie(cname) {
@@ -49,15 +48,16 @@ function setCookie(cname,cvalue,expires) {
   
   function checkCookie(sampleName) {
     var user=getCookie("username");
-    console.log("####",sampleName);
-    if (user != "") {
+    console.log("####",user);
+    if (user) {
       alert("Welcome again " + user);
     } else {
-        user = sampleName;
-        console.log(user);
-       if (user != "" && user != null) {
-         setCookie("username", user, 30);
-       }
+        $('#myModal').modal('show');    ``
+    //     user = sampleName;
+    //     console.log(user);
+    //    if (user != "" && user != null) {
+    //      setCookie("username", user, 30);
+    //    }
     }
   }
 
