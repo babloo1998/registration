@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <Head>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       
+        <script type="text/javascript" src="./main.js"></script>
+        
+        <link rel="stylesheet" href="./main.css">
+
+        <title>Registration</title>
+
+    </Head>
+    <body>
+            <!-- <button onClick = "OnClickHandler()">hello</button>    -->
+        <div class="container">
+            <div class="modal" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" onclick="closeModal()" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body row">
+                            <div class="col-lg-8 col-sm-12">
+                                <h5>Get $10 OFF WHEN YOU  SIGN UP For</h5>
+                                <h6>SAVINGS,NEWS,UPDATES AND MORE</h6>
+                                <form id="myForm" name="form"  method="post">
+                                        <div class="form-group">
+                                            <input type="name" class="form-control" placeholder="your name" name="name"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="email address" required/>
+                                        </div>
+                                        <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="Check1" name="newsletterSubscription">
+                                        <label class="form-check-label" for="exampleCheck1">Check this box to receive monthly newsletter</label>
+                                        </div>
+                                        <button style="width:100%" onclick=validateForm() id="button" type="button" value="send" class="btn btn-dark">SIGN UP</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-4 d-sm-none d-lg-block">
+                                    <img style="max-width: 100%" src="https://i.ibb.co/1KrYcpw/image.png" alt="image"/>
+                            </div>    
+                        </div>
+                </div>
+            </div>
+        </div>   
+<!-- 
+                  <script type="text/javascript">
+                    $(window).on('load', function () {
+                    $('#myModal').modal('show');
+                    });
+                    </script> -->
+    </body>
+</html>
